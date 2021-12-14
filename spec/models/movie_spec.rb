@@ -9,6 +9,7 @@ RSpec.describe Movie, type: :model do
 
   describe 'content' do
     movie_1 = Movie.create(title: "Raiders of the Lost Ark", creation_year: 1981, genre: "Action/Adventure")
+  
     expect(page).to have_content(movie_1.title)
     expect(page).to have_content(movie_1.creation_year)
     expect(page).to have_content(movie_1.genre)
